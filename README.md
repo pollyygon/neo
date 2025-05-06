@@ -24,7 +24,7 @@ AI Disclosure
 
 3. Evaluating AI Suggestions:
 
-  NA
+    NA
   
 4. Modifications:
 

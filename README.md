@@ -5,10 +5,10 @@ This app fetches near earth objects and was developed as part of a technical int
 This app was designed for android and iOS.
 
 1. Install dependencies
-   
-  npm install
+
+   npm install
   
-2. Start the app
+3. Start the app
 
    npm run web or npx expo start
 

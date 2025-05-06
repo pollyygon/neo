@@ -12,9 +12,9 @@ This app was designed for android and iOS.
 
 AI Disclosure
 
-1.AI usage:
+1. AI usage:
 
-   AI was minimally used. I used Gemini to find the name of a font that I liked and to generate some asteroid images that were ultimately not used. 
+    AI was minimally used. I used Gemini to find the name of a font that I liked and to generate some asteroid images that were ultimately not used. 
    
 2. Manual Work:
 

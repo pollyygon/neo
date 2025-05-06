@@ -9,10 +9,10 @@ import{ useFonts } from 'expo-font';
 
 
 export default function Calendar() {
-  const defaultStyles =   useDefaultStyles();
+  const defaultStyles =   useDefaultStyles('dark');
   const [selected, setSelected] = useState<DateType>(new Date());
   const router = useRouter();
-  let [fontsLoaded, error] = useFonts({
+  useFonts({
       Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_100Thin, Inter_300Light
   })
   // todo: change the color of the selected date
@@ -29,12 +29,15 @@ export default function Calendar() {
 
               styles={{
                  ...defaultStyles, 
-                  today: { borderColor: 'gray', borderWidth: 1},
-                  weekday_label: {fontFamily: 'Inter_500Medium', color: 'white'},
-                  days: {fontFamily: 'Inter_500Medium'},
-                  button_next_image: {height: 20, width: 20},
-                  button_prev_image: {height: 20, width: 20},
-                  header: {fontFamily: 'Inter_500Medium', color: 'white'},
+                  today: styles.today,
+                  weekday_label: styles.weekdaysLabel,
+                  weekdays: styles.weekDayWrapper,
+                  button_next_image: styles.buttonStyles,
+                  button_prev_image: styles.buttonStyles,
+                  month_selector_label: styles.headerStyles,
+                  year_selector_label: styles.headerStyles,
+                  day_label: styles.dayLabel,
+                  
                 }}    
           />
         </View>     
@@ -55,6 +58,36 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     alignItems: 'center',
+  },
+  buttonStyles: {
+    height: 20, 
+    width: 20, 
+    tintColor: 'white'
+  },
+  headerStyles:{
+    fontFamily: 'Inter_300Light', 
+    fontSize: 20, 
+    color: 'white'
+  },
+  dayLabel: {
+    fontSize: 15, 
+    fontFamily: 'Inter_300Light', 
+    color: 'white'
+  },
+  weekDayWrapper:{
+    height: 40, 
+    paddingBottom: 10, 
+    alignItems: 'flex-end', 
+    borderBottomColor: 'gray', 
+    borderWidth: 1
+  },
+  weekdaysLabel: {
+    fontFamily: 'Inter_500Medium', 
+    color: 'white'
+  },
+  today:{
+    borderColor: 'gray', 
+    borderWidth: 1
   }
 });
 

@@ -7,7 +7,7 @@ interface ThemedButtonsProps extends TouchableOpacityProps {
 }
 
 export function ThemedButtons({ text, style, ...props} : ThemedButtonsProps) {
-    let [fontsLoaded, error] = useFonts({
+    useFonts({
          Inter_500Medium
       });
 
@@ -24,7 +24,9 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 5,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        overflow: 'visible',
+        
       },
       buttonsText:{
         fontFamily: 'Inter_500Medium',

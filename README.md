@@ -30,7 +30,7 @@ AI Disclosure
    
 8. AI in my workflow:
 
-  When I use AI at work, I mostly use it for large errors that I haven't been able to figure out. I also use AI when I don't understand a concept. For example. "Explain XYZ like I'm 5 years old" or "Create a real world analogy for XYZ"
+   When I use AI at work, I mostly use it for large errors that I haven't been able to figure out. I also use AI when I don't understand a concept. For example. "Explain XYZ like I'm 5 years old" or "Create a real world analogy for XYZ"
 
 
   

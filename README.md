@@ -5,8 +5,11 @@ This app fetches near earth objects and was developed as part of a technical int
 This app was designed for android and iOS.
 
 1. Install dependencies
-  npm install
-2. Start the app
+
+   npm install
+  
+3. Start the app
+
    npm run web or npx expo start
 
 
@@ -20,7 +23,7 @@ AI Disclosure
 
    I approached all the coding manually. I did it manually because AI assistance hampers learning. This was my first time using React Native and I wanted to learn more about it on my own.
    
-4. Evaluating AI Suggestions
+4. Evaluating AI Suggestions:
    
    NA
    

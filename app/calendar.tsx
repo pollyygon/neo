@@ -4,7 +4,7 @@ import DateTimePicker, { DateType, useDefaultStyles } from 'react-native-ui-date
 import { useState } from 'react';
 import { useRouter} from 'expo-router';
 import { ThemedButtons } from '@/components/ThemedButtons';
-import { Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_100Thin, Inter_300Light } from '@expo-google-fonts/inter';
+import { Inter_400Regular, Inter_500Medium,  Inter_100Thin, Inter_300Light } from '@expo-google-fonts/inter';
 import{ useFonts } from 'expo-font';
 
 
@@ -13,9 +13,9 @@ export default function Calendar() {
   const [selected, setSelected] = useState<DateType>(new Date());
   const router = useRouter();
   useFonts({
-      Inter_400Regular, Inter_500Medium, Inter_600SemiBold, Inter_100Thin, Inter_300Light
+      Inter_400Regular, Inter_500Medium, Inter_100Thin, Inter_300Light
   })
-  // todo: change the color of the selected date
+  
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
@@ -43,7 +43,8 @@ export default function Calendar() {
         </View>     
         <ThemedButtons 
           text='Explore NEOS' 
-          style= {{width: 350, height: 50}} onPress={() => router.push(
+          style= {{width: 350, height: 50}} 
+          onPress={() => router.push(
           {
             pathname: '/neo/[id]',
              params: { id: selected?.toISOString().slice(0, 10) }
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     color: 'white'
   },
   weekDayWrapper:{
-    height: 40, 
+    height: 65, 
     paddingBottom: 10, 
     alignItems: 'flex-end', 
     borderBottomColor: 'gray', 

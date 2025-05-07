@@ -7,12 +7,6 @@ import { Neo } from '@/types/Neo';
 import { globalStyles } from '@/constants/Styles';
 
 
-
-/*  todo: 
- maybe add a loading screen or prefetch
- */
-
-
 export default function Results(){
   const demokey = 'lTHPxbpwqnn3thI5aiCieLtOpT1MZ85pxbkRI9tN';
   const [neosObj, setNeosObj] = useState<Neo[]>([]);

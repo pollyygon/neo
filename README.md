@@ -7,9 +7,9 @@
 
         npm install
 
-2. Start the app
+2. Start the app (run one of the commands below)
 
-        npm run web
+       npm run web
    
        npx expo start
 

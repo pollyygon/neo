@@ -13,6 +13,8 @@
    
        npx expo start
 
+   Follow instructions on console to view the app on your preferred device or emulator/simulator. 
+
 ### AI Disclosure
 
 **1. AI usage:**

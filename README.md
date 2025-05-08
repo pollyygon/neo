@@ -5,7 +5,7 @@
 ### Running the app
 1. Install dependencies
 
-        npm install
+       npm install
 
 2. Start the app (run one of the commands below)
 

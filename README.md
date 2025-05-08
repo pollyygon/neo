@@ -13,7 +13,7 @@
 
 ### AI Disclosure
 
-**1. AI usage:**
+__1. AI usage:__
 
     AI was minimally used. I used Gemini to find the name of a font that I liked and to generate some asteroid images that were ultimately not used.
 

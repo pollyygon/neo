@@ -5,11 +5,13 @@
 ### Running the app
 1. Install dependencies
 
-    npm install
+        npm install
 
 2. Start the app
 
-    npm run web or npx expo start
+        npm run web
+   
+       npx expo start
 
 ### AI Disclosure
 
